@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proffy | Sua plataforma de estudos online</title>
+        
+        <!-- Estilos da pagina -->
+        <link rel="stylesheet" type="text/css" href="/styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/partials.css/header.css">
+        <link rel="stylesheet" type="text/css" href="styles/partials.css/forms.css">
+        <link rel="stylesheet" type="text/css" href="/styles/partials.css/page-study.css">
+
+        <!-- Fontes usadas na pagina -->
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+    </head>
+    <body id="page-study">
+
+        <div id="container"> <!-- Inicio do container -->
+            <!--Conteudo cabeçalho -->
+            <header class="page-header">
+                <div class="top-bar-container">
+                    <a href="/">
+                        <img src="/images/icons/back.svg" alt="Voltar">
+                    </a>
+                    <img src="/images/logo.svg" alt="Proffy">
+                </div>
+
+                <div class="header-content">
+                    <strong>Esses são os proffys disponíveis</strong>
+                    <form id="search-teachers">
+                        <div class="select-block">
+                            <label for="subject">Matéria</label>
+                            <select name="subject" id="subject">
+                                <option value="" disabled="" hidden="">Selecione uma opção</option>
+                                <option value="1">Artes</option>
+                                <option value="2">Biologia</option>
+                                <option value="3">Ciência</option>
+                                <option value="4">Educação física</option>
+                                <option value="5">Física</option>
+                                <option value="6">Geografia</option>
+                                <option value="7">História</option>
+                                <option value="8">Matemática</option>
+                                <option value="9">Português</option>
+                                <option value="10">Química</option>
+                            </select>
+                        </div>
+
+                        <div class="select-block">
+                            <label for="week_day">Dia da semana</label>
+                            <select name="week_day" id="week_day">
+                                <option value="" disabled="" hidden="">Selecione uma opção</option>
+                                <option value="0">Domingo</option>
+                                <option value="1">Segunda-feira</option>
+                                <option value="2">Terça-feira</option>
+                                <option value="3">Quarta-feira</option>
+                                <option value="4">Quinta-feira</option>
+                                <option value="5">Sexta-feira</option>
+                                <option value="6">Sábado</option>
+                            </select>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="week_day">Hora</label>
+                            <input name="time" id="time" type="time">
+                            <!--type="number" min="0" max="24"-->
+                        </div>
+                        <button type="submit">Filtrar</button>
+                    </form>
+                </div>
+            </header>
+            <!-- Conteudo principal dessa pagina -->
+            <main>
+                <!-- Algo que vai se repetir -->
+                <article class="teacher-item">
+
+                    <header>
+                        <img src="https://igd-wp-uploads-pluginaws.s3.amazonaws.com/wp-content/uploads/2016/05/30105213/Qual-e%CC%81-o-Perfil-do-Empreendedor.jpg" alt="foto de perfil">
+                        <div>
+                        <strong>Everton Pirula</strong>
+                        <span>Química</span>
+                        </div>
+                    </header>
+
+                    <p>
+                        Entusiasta das melhores tecnologias em química avançada, <br><br> Apaixonado por explodir coisa em laboratorio e por mudar a vida das pessoas através da experiências. Mais de 200.000 pessoas já passaram por uma das minha explosões. 
+                    </p>
+
+                    <footer>
+                        <p>Preço/hora<strong>R$ 50,00</strong></p>
+
+                        <button type="button"><img src="/images/icons/whatsapp.svg" alt="whatsapp">Entrar em contato</button>
+                    </footer>
+
+
+
+                </article>
+
+                <article class="teacher-item">
+                <header>
+                    <img src="https://igd-wp-uploads-pluginaws.s3.amazonaws.com/wp-content/uploads/2016/05/30105213/Qual-e%CC%81-o-Perfil-do-Empreendedor.jpg" alt="foto de perfil">
+                    <div>
+                        <strong>Everton Pirula</strong>
+                        <span>Química</span>
+                    </div>
+                </header>
+                
+                <p>
+                    Entusiasta das melhores tecnologias em química avançada, <br><br> Apaixonado por explodir coisa em laboratorio e por mudar a vida das pessoas através da experiências. Mais de 200.000 pessoas já passaram por uma das minha explosões. 
+                </p>
+
+                <footer>
+                    <p>Preço/hora<strong>R$ 50,00</strong></p>
+                    <button type="button"><img src="/images/icons/whatsapp.svg" alt="whatsapp">Entrar em contato</button>
+                </footer>
+
+                </article>
+            </main>
+        </div> <!-- Fim do container -->
+
+    </body>
+</html>
