@@ -66,29 +66,35 @@
             <!-- Conteudo principal dessa pagina -->
             <main>
                 
-                {%for proffy in proffys %}
-                    <!-- Algo que vai se repetir -->
-                    <article class="teacher-item">
-                        <header>
-                            <img src="{{proffy.avatar}}" alt="{{proffy.name}}">
-                            <div>
-                            <strong>{{proffy.name}}</strong>
-                            <span>{{proffy.subject}}</span>
-                            </div>
-                        </header>
+                {% if proffys == "" %}
+                    <p class="no-results">Nenhum professor com a sua pesquisa.</p>
+                {% else %}
 
-                        <p> {{proffy.bio}} </p>
+                    {%for proffy in proffys %}
+                        <!-- Algo que vai se repetir -->
+                        <article class="teacher-item">
+                            <header>
+                                <img src="{{proffy.avatar}}" alt="{{proffy.name}}">
+                                <div>
+                                <strong>{{proffy.name}}</strong>
+                                <span>{{proffy.subject}}</span>
+                                </div>
+                            </header>
 
-                        <footer>
-                            <p>Preço/hora<strong>R$ {{proffy.cost}}</strong></p>
+                            <p> {{proffy.bio}} </p>
 
-                            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=55{{proffy.whatsapp}}&text=Tenho interesse na sua aula de {{proffy.subject}} {{proffy.name}}" class="button" target="_black">
-                                <img src="/images/icons/whatsapp.svg" alt="Whatsapp">Entre em contato
-                            </a>
-                        
-                        </footer>
-                    </article>
-                {%endfor%}
+                            <footer>
+                                <p>Preço/hora<strong>R$ {{proffy.cost}}</strong></p>
+
+                                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=55{{proffy.whatsapp}}&text=Tenho interesse na sua aula de {{proffy.subject}} {{proffy.name}}" class="button" target="_black">
+                                    <img src="/images/icons/whatsapp.svg" alt="Whatsapp">Entre em contato
+                                </a>
+                            
+                            </footer>
+                        </article>
+                    {%endfor%}
+
+                {% endif %}
 
             </main>
         </div> <!-- Fim do container -->
