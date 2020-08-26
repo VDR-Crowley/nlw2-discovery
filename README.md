@@ -12,13 +12,13 @@ Os alunos podem escolher o professor de acordo com o horario que ele estara disp
 ### Tecnologias Utilizadas
 
 **Front-end**
-> HTML5/CSS3 
-> Nunjucks
-> JavaScript
+ HTML5/CSS3 
+ Nunjucks
+ JavaScript
 
 **Back-end**
->Node.js
->Sqlite
+Node.js 
+Sqlite
 
 ## Instalando Dependencias
 
