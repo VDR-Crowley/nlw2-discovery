@@ -14,12 +14,15 @@ Os alunos podem escolher o professor de acordo com o horario que ele estara disp
 **Front-end**
 
  HTML5/CSS3 
+ 
  Nunjucks
+ 
  JavaScript
 
 **Back-end**
 
- Node.js
+ Node.js 
+
  Sqlite
 
 ## Instalando Dependencias
