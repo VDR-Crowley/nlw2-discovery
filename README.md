@@ -1,8 +1,9 @@
 ## nlw2-discovery
 
->O nlw (trilha discovery) é um evento da rocketseat, no qual desenvolvemos uma aplicação do zero usando as tecnologias html/css/javascript/nodejs/sqlite
+> O nlw (trilha discovery) é um evento da rocketseat, no qual desenvolvemos uma aplicação do zero usando as tecnologias html/css/javascript/nodejs/sqlite
 
 ### Sobre o Projeto
+
 O projeto é uma plataforma de estudos ficticia chamada Proffy.
 
 Os Professores podem se cadastrar e escolher dia e hora que podem realizar um aula, ele pode criar um perfil e já ficará disponivel para os alunos
@@ -13,17 +14,17 @@ Os alunos podem escolher o professor de acordo com o horario que ele estara disp
 
 **Front-end**
 
- HTML5/CSS3 
- 
- Nunjucks
- 
- JavaScript
+HTML5/CSS3
+
+Nunjucks
+
+JavaScript
 
 **Back-end**
 
- Node.js 
+Node.js
 
- Sqlite
+Sqlite
 
 ## Instalando Dependencias
 
@@ -33,7 +34,8 @@ Os alunos podem escolher o professor de acordo com o horario que ele estara disp
  npm install nunjucks
 ```
 
-## Executando o projeto 
+## Executando o projeto
+
 ```sh
 npm init
 
@@ -45,3 +47,17 @@ npm run dev      // Ligar o servidor
 
 //servidor na porta: localhost:5500
 ```
+
+## Imagens do Proffy
+
+<div>
+  <img src="./design/home.png" width="400px">
+</div>
+Cadastro do professor
+<div>
+  <img src="./design/form.png" width="400px">
+</div>
+Filtragem do professor
+<div>
+  <img src="./design/mostraProfessor.png" width="400px">
+</div>
